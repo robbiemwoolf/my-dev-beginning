@@ -1,0 +1,251 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+main img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.host-list {
+  margin-bottom: 30px;
+}
+
+.host-title {
+  display: flex;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 10px 0 10px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 60px;
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  padding-right: 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 100%;
+  padding: 5px;
+  width: 100%;
+}
+
+.spaced {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* ---------- Desktop Screens ----------*/
+
+@media all and (min-width: 480px) {
+
+  /* ------- Dt Header ------- */
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .logo {
+    margin: 14px 0;
+    padding-top: 0;
+    font-size: 50px;
+  }
+
+  header nav {
+    margin-top: 20px;
+  }
+
+
+  /* ------- Dt Search form ------- */
+  form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  form select, form input {
+  width: 100%;
+}
+
+  .spaced {
+    flex-direction: column;
+  }
+
+
+  form div{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+  }
+
+  form button{
+    width: 15%;
+  }
+
+
+  /* ------- Dt About ------- */
+  main img {
+    margin-bottom: 0;
+  }
+
+  .row-align {
+    display: flex;
+  }
+
+  .vertically-centered {
+    align-items: center;
+  }
+
+  /* ------- Dt Ideas ------- */
+  .grid2x2 {
+    flex-wrap: wrap;
+  }
+
+  .grid-align {
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  /* ------- Dt Host ------- */
+  .host-list {
+    margin-bottom: 0;
+  }
+
+  .host-title {
+    padding: 0;
+  }
+}
+
+/*--- Very Small Screens (min-width: 216px) ---*/
+
+@media all and (max-width: 300px) {
+  .logo {
+    font-size: 42px;
+  }
+  
+  form select,
+  form input {  
+    width: 60%;
+  }
+
+}

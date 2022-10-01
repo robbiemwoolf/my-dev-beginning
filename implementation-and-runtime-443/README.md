@@ -1,0 +1,36 @@
+<div class="scrollable-container" ng-transclude="" style="user-select: auto;"> <div markdown="fileTab.file.challenge.instructions" multi-language="true" class="markdown collapsed" style="user-select: auto;"><h1 style="user-select: auto;">Trees: Implementation and runtime</h1><p style="user-select: auto;">To succeed at this challenge, you'll need to demonstrate that you can do the following:</p>
+<ul style="user-select: auto;">
+<li style="user-select: auto;">Implement a binary search tree</li>
+</ul>
+<h2 style="user-select: auto;">Instructions</h2><p style="user-select: auto;">Your goal for this assessment is to get the tests to pass.</p>
+<p style="user-select: auto;">To do so, you will be modifying the existing <code style="user-select: auto;">BinarySearchTree</code> class to implement a binary search tree with lookup, insert, and delete capabilities.</p>
+<h3 style="user-select: auto;">Existing files</h3><table style="user-select: auto;">
+<thead style="user-select: auto;">
+<tr style="user-select: auto;">
+<th style="user-select: auto;">File path</th>
+<th style="user-select: auto;">Description</th>
+</tr>
+</thead>
+<tbody style="user-select: auto;">
+<tr style="user-select: auto;">
+<td style="user-select: auto;"><code style="user-select: auto;">src/main.js</code></td>
+<td style="user-select: auto;">Contains some example uses of the <code style="user-select: auto;">BinarySearchTree</code> class.</td>
+</tr>
+<tr style="user-select: auto;">
+<td style="user-select: auto;"><code style="user-select: auto;">src/BinarySearchTree.js</code></td>
+<td style="user-select: auto;">Contains the definition of the <code style="user-select: auto;">BinarySearchTree</code> class. The <code style="user-select: auto;">constructor()</code> method has already been completed for you.</td>
+</tr>
+</tbody>
+</table>
+<h3 style="user-select: auto;">Tasks</h3><p style="user-select: auto;">Complete the following tasks to pass the tests and this assessment.</p>
+<p style="user-select: auto;">In the <code style="user-select: auto;">src/BinarySeachTree.js</code> file:</p>
+<ol style="user-select: auto;">
+<li style="user-select: auto;"><p style="user-select: auto;">Complete the <code style="user-select: auto;">insert()</code> method to insert a node into the BST. The method should accept a key and a value as its arguments.</p>
+</li>
+<li style="user-select: auto;"><p style="user-select: auto;">Complete the <code style="user-select: auto;">find()</code> method, which should accept a key as its argument and return the value for the given key in the BST. Throw an <code style="user-select: auto;">Error()</code> with a string error message if the node is not found in the BST.</p>
+</li>
+<li style="user-select: auto;"><p style="user-select: auto;">Complete the <code style="user-select: auto;">remove()</code> method to delete a node with a given key in the BST. Throw an <code style="user-select: auto;">Error()</code> with a string error message if the node to be removed is not found in the BST.</p>
+</li>
+</ol>
+<p style="user-select: auto;">Once these tasks are complete, all tests should pass.</p>
+</div> <score-card-instructions challenge="fileTab.file.challenge" style="user-select: auto;"><!----></score-card-instructions> </div>
